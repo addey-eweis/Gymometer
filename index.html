@@ -13,7 +13,7 @@
          <td>
             <ul class="Logo"><a href="/index.html">Gymometer</a></ul>
             <ul><a href="#workout">Workouts</a></ul>
-            <ul><a href="https://www.youtube.com" target="_blank">Youtube</a></ul>
+            <ul><a href="https://www.youtube.com/@Gymometer" target="_blank">Youtube</a></ul>
          </td>
       </nav>
       <h1 class="headerText">DISCOVER YOUR TRUE POTENTIAL</h1>
@@ -21,36 +21,43 @@
    <section class="hallOfFame">
       <div id="boxShadow"></div>
       <div class="hallOfFameGridContainer">
-         <div class="gridItem"><img src="https://www.muscleandfitness.com/wp-content/uploads/2019/05/10-Best-Arms-Olympia-Arnold-Schwarzenegar.jpg?quality=86&strip=all"></div>
-         <div class="gridItem"><img src="https://pbs.twimg.com/media/FmiefNBWQAMfFMX.jpg:large"></div>
-         <div class="gridItem"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqPWtdaTMqTeZcBVbjyQXD7Oc-Dhw-8rhFwIFd8Zmg=s900-c-k-c0x00ffffff-no-rj"></div>
-         <div class="gridItem"><img src="https://www.kemifilani.ng/wp-content/uploads/2023/03/Greg-Doucette-age.jpg"></div>
-         <div class="gridItem"><img src="https://i1.sndcdn.com/artworks-MhjDyWfVbQLQuStk-0kkVKw-t500x500.jpg"></div>
-         <div class="gridItem"><img src="https://www.greatestphysiques.com/wp-content/uploads/2016/09/Mike-Mentzer-biceps1.jpg"></div>
-         <div class="gridItem"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqOaQuziiDFS9qsRt7zapBSRoFTn5v4ZiT_Js2hkWA=s900-c-k-c0x00ffffff-no-rj"></div>
-         <div class="gridItem"><img src="https://e1.pxfuel.com/desktop-wallpaper/579/569/desktop-wallpaper-ronnie-coleman-bodybuilding-ronnie-coleman-thumbnail.jpg"></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@ArnoldSchwarzenegger" target="_blank"><img id="imgFirst" src="https://www.muscleandfitness.com/wp-content/uploads/2019/05/10-Best-Arms-Olympia-Arnold-Schwarzenegar.jpg?quality=86&strip=all"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@ChrisBumstead" target="_blank"><img src="https://pbs.twimg.com/media/FmiefNBWQAMfFMX.jpg:large"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@WillTennyson" target="_blank"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqPWtdaTMqTeZcBVbjyQXD7Oc-Dhw-8rhFwIFd8Zmg=s900-c-k-c0x00ffffff-no-rj"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@gregdoucette" target="_blank"><img src="https://www.kemifilani.ng/wp-content/uploads/2023/03/Greg-Doucette-age.jpg"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@thetrentwins" target="_blank"><img src="https://i1.sndcdn.com/artworks-MhjDyWfVbQLQuStk-0kkVKw-t500x500.jpg"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@mikementzervideos4397/" target="_blank"><img src="https://www.greatestphysiques.com/wp-content/uploads/2016/09/Mike-Mentzer-biceps1.jpg"></a></div>
+         <div class="gridItem"><a href="https://www.youtube.com/@moreplatesmoredates" target="_blank"><img id="imgLast" src="https://yt3.googleusercontent.com/ytc/AGIKgqOaQuziiDFS9qsRt7zapBSRoFTn5v4ZiT_Js2hkWA=s900-c-k-c0x00ffffff-no-rj"></a></div>
+         <!-- <div class="gridItem"><img id="imgLast" src="https://e1.pxfuel.com/desktop-wallpaper/579/569/desktop-wallpaper-ronnie-coleman-bodybuilding-ronnie-coleman-thumbnail.jpg"></div> -->
       </div>
+   </section>
+   <section id="quoteSection">
+      <h1>#GetBuilt</h1>
+      <h1>#AnabolicGains</h1>
+      <h1>#GetSwole</h1>
+      <h1>#GymJunkie</h1>
+      <h1>#LiftHeavy</h1>
+      <h1>#GymIsLife</h1>
    </section>
    <section class="workouts" id="workout">
       <div class="buttonCardGridContainer">
-         <button class="buttonCard" id="chest">Chest</button>
-         <button class="buttonCard" id="back">Back</button>
-         <button class="buttonCard" id="biceps">Biceps</button>
-         <button class="buttonCard" id="triceps">Triceps</button>
-         <button class="buttonCard" id="shoulders">Shoulders</button>
-         <button class="buttonCard" id="forearms">Forearms</button>
-         <button class="buttonCard" id="legs">Legs</button>
+         <button class="buttonCard" onclick="selectTab(1);" id="button1">All</button>
+         <button class="buttonCard" onclick="selectTab(2);" id="button2">Chest</button>
+         <button class="buttonCard" onclick="selectTab(3);" id="button3">Back</button>
+         <button class="buttonCard" onclick="selectTab(4);" id="button4">Biceps</button>
+         <button class="buttonCard" onclick="selectTab(5);" id="button5">Triceps</button>
+         <button class="buttonCard" onclick="selectTab(6);" id="button6">Shoulders</button>
+         <button class="buttonCard" onclick="selectTab(7);" id="button7">Forearms</button>
+         <button class="buttonCard" onclick="selectTab(8);" id="button8">Legs</button>
       </div>
       <div class="workoutsGrid" id="workoutsGrid">
-         <div class="card">Card 1</div>
-         <div class="card">Card 2</div>
-         <div class="card">Card 3</div>
-         <div class="card">Card 4</div>
-         <div class="card">Card 5</div>
-         <div class="card">Card 6</div>
-         <div class="card">Card 7</div>
-         <div class="card">Card 8</div>
-         <div class="card">Card 9</div>
+         <div class="tab1 tab2 card"><h1>Bench Press</h1></div>
+         <div class="tab1 tab3 card"><h1>Lat Pulldown</h1></div>
+         <div class="tab1 tab4 card"><h1>Bicep Curl</h1></div>
+         <div class="tab1 tab5 card"><h1>Tricep Pushdown</h1></div>
+         <div class="tab1 tab6 card"><h1>Overhead Press</h1></div>
+         <div class="tab1 tab7 card"><h1>Forearm Curls</h1></div>
+         <div class="tab1 tab8 card"><h1>Squats</h1></div>
 
       </div>
 

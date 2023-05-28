@@ -2,6 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: white;
 }
 
 .header {
@@ -9,7 +14,6 @@
   background-image: url("https://r4.wallpaperflare.com/wallpaper/940/736/840/man-dark-bodybuilder-muscle-wallpaper-68860d6840402cc890dcf13ec8c224aa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: -10px -1000px yellow;
 }
 .header nav {
   display: flex;
@@ -57,7 +61,7 @@
   height: 5vh;
   width: 100%;
   display: inline-grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -67,43 +71,82 @@
      object-fit: cover;
   height: 90%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.hallOfFame .hallOfFameGridContainer .gridItem img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#quoteSection {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
+}
+#quoteSection h1 {
+  margin: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  opacity: 0.2;
+  font-size: 2rem;
+}
+#quoteSection h1:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .workouts {
-  height: 20vh;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: black;
 }
 .workouts .buttonCardGridContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .workouts .buttonCardGridContainer .buttonCard {
-  text-align: center;
-  text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border-radius: none;
+  border: black;
+  height: 10vh;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  outline: none;
   border: none;
-  height: 60px;
-  width: 300px;
-  margin: 50px 15px;
 }
 .workouts .buttonCardGridContainer .buttonCard:hover {
   cursor: pointer;
+  background-color: grey;
+  transition: 0.2s;
+}
+.workouts .buttonCardGridContainer .buttonCard:focus {
+  font-weight: 300;
+  background-color: #ccc;
+}
+.workouts .buttonCardGridContainer .buttonCard:first-of-type {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.workouts .buttonCardGridContainer .buttonCard:last-of-type {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .workouts .workoutsGrid {
-  padding: 0px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 200vh;
+  grid-template-columns: repeat(4, 1fr);
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .workouts .workoutsGrid .card {
   background-color: white;
   border-radius: 20px;
   border: 1px solid #ccc;
   text-align: center;
+  height: 60vh;
   margin: 10px;
   /* On mouse-over, add a deeper shadow */
 }
