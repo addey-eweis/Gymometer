@@ -1,4 +1,5 @@
 const cards = document.getElementsByClassName("card");
+const 
 function selectTab(tabIndex) {
    
    for (i = 0; i < cards.length; i++){
@@ -9,6 +10,14 @@ function selectTab(tabIndex) {
       const element = document.getElementsByClassName(`tab${tabIndex}`)
       element[i].style.display = "block";
       document.getElementById(`button${tabIndex}`).focus();
+   }
+}
+
+
+
+function cardUrls(index, muscleGroup) {
+   if (muscleGroup === "tab2") {
+      window.location.href = "/benchpress"
    }
 }
 

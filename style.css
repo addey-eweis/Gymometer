@@ -3,10 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-}
-
-button {
-  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .header {
@@ -14,12 +11,14 @@ button {
   background-image: url("https://r4.wallpaperflare.com/wallpaper/940/736/840/man-dark-bodybuilder-muscle-wallpaper-68860d6840402cc890dcf13ec8c224aa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .header nav {
   display: flex;
   flex-direction: right;
-  padding-top: 30px;
   align-items: center;
+  align-items: center;
+  padding-top: 50px;
 }
 .header nav ul {
   color: white;
@@ -29,11 +28,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 30px;
+  margin: 0 40px;
 }
 .header nav ul a {
   color: white;
   text-decoration: none;
+}
+.header nav .Links {
+  padding-top: 5px;
 }
 .header nav .Logo {
   font-size: 2rem;
@@ -79,7 +81,7 @@ button {
 }
 
 #quoteSection {
-  background-color: black;
+  background-color: #161616;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,50 +91,52 @@ button {
   margin: 0 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
-  opacity: 0.2;
+  opacity: 0.4;
   font-size: 2rem;
 }
 #quoteSection h1:hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
+  font-weight: 800;
 }
 
 .workouts {
   height: -moz-fit-content;
   height: fit-content;
-  background-color: black;
+  background-color: #161616;
 }
 .workouts .buttonCardGridContainer {
   display: flex;
   flex-direction: row;
+  margin: 0 20px;
 }
 .workouts .buttonCardGridContainer .buttonCard {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border: black;
   height: 10vh;
   width: 100%;
   font-size: 20px;
   font-weight: 100;
+  color: white;
   text-decoration: none;
   outline: none;
   border: none;
+  background-color: #2c2c2c;
 }
 .workouts .buttonCardGridContainer .buttonCard:hover {
   cursor: pointer;
-  background-color: grey;
+  background-color: #343434;
   transition: 0.2s;
 }
 .workouts .buttonCardGridContainer .buttonCard:focus {
-  font-weight: 300;
-  background-color: #ccc;
+  background-color: #464646;
 }
 .workouts .buttonCardGridContainer .buttonCard:first-of-type {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .workouts .buttonCardGridContainer .buttonCard:last-of-type {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .workouts .workoutsGrid {
   padding: 20px 10px 10px 10px;
@@ -140,16 +144,50 @@ button {
   grid-template-columns: repeat(4, 1fr);
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 .workouts .workoutsGrid .card {
-  background-color: white;
+  background-color: #2c2c2c;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  cursor: pointer;
   text-align: center;
   height: 60vh;
   margin: 10px;
+  padding: 60px 30px;
   /* On mouse-over, add a deeper shadow */
+}
+.workouts .workoutsGrid .card h1 {
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  opacity: 0.7;
+}
+.workouts .workoutsGrid .card p {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  font-weight: 100;
+  opacity: 0.7;
+  line-height: 30px;
 }
 .workouts .workoutsGrid .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #343434;
+  transition: 0.3s;
+}
+.workouts .workoutsGrid .card:hover h1 {
+  opacity: 1;
+}
+.workouts .workoutsGrid .card:hover p {
+  opacity: 1;
+}
+.workouts .workoutsGrid .card:hover .playButton {
+  opacity: 0.3;
+}
+.workouts .workoutsGrid .playButton {
+  float: right;
+  opacity: 0.1;
+  margin-top: 5%;
+  width: 60px;
 }/*# sourceMappingURL=style.css.map */

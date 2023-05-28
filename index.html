@@ -12,11 +12,11 @@
       <nav>
          <td>
             <ul class="Logo"><a href="/index.html">Gymometer</a></ul>
-            <ul><a href="#workout">Workouts</a></ul>
-            <ul><a href="https://www.youtube.com/@Gymometer" target="_blank">Youtube</a></ul>
+            <ul class="Links"><a href="#workout">Workouts</a></ul>
+            <ul class="Links"><a href="https://www.youtube.com/@Gymometer" target="_blank">Youtube</a></ul>
          </td>
       </nav>
-      <h1 class="headerText">DISCOVER YOUR TRUE POTENTIAL</h1>
+      <h1 class="headerText">DISCOVER YOUR TRUE POTENTIAL!</h1>
    </header>
    <section class="hallOfFame">
       <div id="boxShadow"></div>
@@ -51,13 +51,41 @@
          <button class="buttonCard" onclick="selectTab(8);" id="button8">Legs</button>
       </div>
       <div class="workoutsGrid" id="workoutsGrid">
-         <div class="tab1 tab2 card"><h1>Bench Press</h1></div>
-         <div class="tab1 tab3 card"><h1>Lat Pulldown</h1></div>
-         <div class="tab1 tab4 card"><h1>Bicep Curl</h1></div>
-         <div class="tab1 tab5 card"><h1>Tricep Pushdown</h1></div>
-         <div class="tab1 tab6 card"><h1>Overhead Press</h1></div>
-         <div class="tab1 tab7 card"><h1>Forearm Curls</h1></div>
-         <div class="tab1 tab8 card"><h1>Squats</h1></div>
+         <div class="tab1 tab2 card" onclick="cardUrls(1, 'tab2')">
+            <h1>Bench Press</h1>
+            <p>The Bench Press is a weightlifting exercise performed on a flat bench, typically using a barbell or dumbbells. It primarily targets the muscles of the upper body, including the chest (pectoralis major), shoulders (deltoids), and triceps. It also engages the muscles of the back, core, and arms to a lesser extent.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab3 card" onclick="cardUrls(1, 'tab3')">
+            <h1>Lat Pulldown</h1>
+            <p>The Lat Pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab4 card">
+            <h1>Bicep Curl</h1>
+            <p>The lat pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab5 card">
+            <h1>Tricep Pushdown</h1>
+            <p>The lat pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab6 card">
+            <h1>Overhead Press</h1>
+            <p>The lat pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab7 card">
+            <h1>Forearm Curls</h1>
+            <p>The lat pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
+         <div class="tab1 tab8 card">
+            <h1>Squats</h1>
+                        <p>The lat pulldown is a back exercise performed on a cable machine. By pulling a wide-grip bar down towards the chest, it targets the lats and upper back muscles. It engages the shoulders, arms, and upper body, making it an effective exercise for overall upper body strength and development.</p>
+            <img class="playButton" src="./assets/playButton.svg">
+         </div>
 
       </div>
 
@@ -69,4 +97,27 @@
 </body>
 
 <script src="script.js"></script>
+<script type="module">
+   // Import the functions you need from the SDKs you need
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+   // TODO: Add SDKs for Firebase products that you want to use
+   // https://firebase.google.com/docs/web/setup#available-libraries
+ 
+   // Your web app's Firebase configuration
+   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   const firebaseConfig = {
+     apiKey: "AIzaSyBJpJMs45YQjq-e3t9oPj0GflBWMYomVjk",
+     authDomain: "gym-ometer.firebaseapp.com",
+     projectId: "gym-ometer",
+     storageBucket: "gym-ometer.appspot.com",
+     messagingSenderId: "579962530873",
+     appId: "1:579962530873:web:91fbc3f158cd3e3ca871e8",
+     measurementId: "G-YLY5LBTYQ2"
+   };
+ 
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+   const analytics = getAnalytics(app);
+ </script>
 </html>
