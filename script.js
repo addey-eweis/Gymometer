@@ -1,5 +1,4 @@
 const cards = document.getElementsByClassName("card");
-const 
 function selectTab(tabIndex) {
    
    for (i = 0; i < cards.length; i++){
