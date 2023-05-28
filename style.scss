@@ -3,39 +3,125 @@
    padding: 0;
    margin: 0;
 }
-nav{
-   padding-top: 15px;
-   background-color: black;
-   height: 8vh;
-   display: flex;
-   flex-direction: right;
-   .Logo{
-      font-size: 2rem;
-      height: 8vh;
-      margin-right: 900px;
 
-   }
-   ul{
-      color: white;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 20px;
-      font-weight: 200;
-      display: flex;
-      align-items: center;
-      height: 8vh;
-      margin: 0 30px;
-   }
-}
 .header{
-   height: 92vh;
-   background-color: black;
+   height: 100vh;
+   background-image: url("https://r4.wallpaperflare.com/wallpaper/940/736/840/man-dark-bodybuilder-muscle-wallpaper-68860d6840402cc890dcf13ec8c224aa.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-shadow: -10px -1000px yellow;
+
+   nav{
+      display: flex;
+      flex-direction: right;
+      padding-top: 30px;
+      align-items: center;
+      
+      
+      ul{
+         color: white;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-size: 20px;
+         font-weight: 200;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 30px;
+         a{
+            color: white;
+            text-decoration: none;
+         }
+      }
+      .Logo{
+         font-size: 2rem;
+         margin-right: 100px;
+         font-weight: 500;
+         a{
+            text-decoration: none;
+            color: white;
+         }
+      }
+   }
+
    .headerText{
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 92vh;
+      height: 85%;
       font-size: 3rem;
       color: white;
       font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; 
+   }
+}
+
+.hallOfFame{
+   background-color: black;
+   .hallOfFameGridContainer{
+      height: 5vh;
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      
+      .gridItem{   
+         img{
+            object-fit: cover;
+            height:90%;
+            width: 100%;
+            opacity: .5;
+         }
+      }
+   }
+}
+
+
+.workouts{
+   height: 20vh;
+   background-color: black;
+
+   .buttonCardGridContainer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .buttonCard{
+         text-align: center;
+         text-decoration: none;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         border-radius: none;
+         border: none;
+         height: 60px;
+         width: 300px;
+         margin: 50px 15px;
+
+         &:hover{
+            cursor:pointer;
+         }
+      }
+   }
+
+   .workoutsGrid{
+      padding: 0px 10px 10px 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // grid-gap: 10px;
+      height: 200vh;
+      
+      .card {
+         background-color: white;
+         border-radius: 20px;
+         border: 1px solid #ccc;
+         text-align: center;
+         margin: 10px;
+
+          
+          /* On mouse-over, add a deeper shadow */
+          &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+      }
    }
 }
