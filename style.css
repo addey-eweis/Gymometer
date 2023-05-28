@@ -170,6 +170,7 @@
   font-weight: 100;
   opacity: 0.7;
   line-height: 30px;
+  height: 330px;
 }
 .workouts .workoutsGrid .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
