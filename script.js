@@ -16,7 +16,9 @@ function selectTab(tabIndex) {
 
 function cardUrls(index, muscleGroup) {
    if (muscleGroup === "tab2") {
-      window.location.href = "/benchpress"
+      if (index === 1) {
+         window.location.href = "/exercises/benchpress"
+      }
    }
 }
 
