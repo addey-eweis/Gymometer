@@ -39,6 +39,7 @@
       <h1>#LiftHeavy</h1>
       <h1>#GymIsLife</h1>
    </section>
+
    <section class="workouts" id="workout">
       <div class="buttonCardGridContainer">
          <button class="buttonCard" onclick="selectTab(1);" id="button1">All</button>
@@ -50,7 +51,9 @@
          <button class="buttonCard" onclick="selectTab(7);" id="button7">Forearms</button>
          <button class="buttonCard" onclick="selectTab(8);" id="button8">Legs</button>
       </div>
+
       <div class="workoutsGrid" id="workoutsGrid">
+
          <div class="tab1 tab2 card" onclick="cardUrls(1, 'tab2')">
             <h1>Bench Press</h1>
             <p>The Bench Press is a weightlifting exercise performed on a flat bench, typically using a barbell or dumbbells. It primarily targets the muscles of the upper body, including the chest (pectoralis major), shoulders (deltoids), and triceps. It also engages the muscles of the back, core, and arms to a lesser extent.</p>
@@ -87,13 +90,19 @@
             <img class="playButton" src="./assets/playButton.svg">
          </div>
 
-      </div>
+         <div class="modalContainer" id="modalContainer">
+            <div class="modalHeader">
+               <h1>Hello This is a popup</h1>
+               <button id="closeButton" onclick="closeButton();">&times;</button>
+            </div>         
+            <div class="modalBody">
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odio, provident eaque quaerat voluptates minus itaque voluptatibus perferendis quam fuga consequuntur, dicta nulla sit deserunt aperiam assumenda incidunt voluptas omnis.</p>
+            </div>
+         </div>
 
-   </section>
+         <div onclick="closeWindow();" id="overlay"></div>
 
-
-
-   
+   </section> 
 </body>
 
 <script src="script.js"></script>

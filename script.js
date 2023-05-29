@@ -1,4 +1,6 @@
 const cards = document.getElementsByClassName("card");
+const modal = document.getElementById("modalContainer");
+const overlay = document.getElementById("overlay");
 function selectTab(tabIndex) {
    
    for (i = 0; i < cards.length; i++){
@@ -17,10 +19,28 @@ function selectTab(tabIndex) {
 function cardUrls(index, muscleGroup) {
    if (muscleGroup === "tab2") {
       if (index === 1) {
-         window.location.href = "/exercises/benchpress"
+         modal.style.visibility = "visible";
+         overlay.classList.add("active")
       }
    }
 }
+
+function closeButton() {
+   const button = document.getElementById("closeButton");
+   button.addEventListener("click", () => {
+      modal.style.visibility = "hidden";
+      overlay.classList.remove("active");
+   })
+}
+
+function closeWindow() {
+   overlay.addEventListener("click", () => {
+      overlay.classList.remove("active");
+      modal.style.visibility = "hidden";
+   })
+}
+
+
 
 
 
